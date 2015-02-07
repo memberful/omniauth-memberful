@@ -1,4 +1,4 @@
-Omniauth::Memberful
+# OmniAuth::Memberful
 
 OmniAuth strategy to authenticate users over the Memberful API in Rails (or Rack)
 applications.
@@ -31,13 +31,15 @@ the generated identifier and secret key in your OmniAuth setup with
 
 In Rails:
 
-```ruby
+```yaml
 # config/secrets.yml
 development:
   memberful_app_identifier: aaaaaaaaa
   memberful_app_secret: bbbbbbbbbbbbbbbbbbb
   memberful_site: https://yoursite.memberful.com
+```
 
+```ruby
 # config/initializers/omniauth.rb
 require "omniauth-memberful"
 
@@ -50,8 +52,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 ```
 
-Check out the example app at https://github.com/rossta/memberful-rails-example
-for more info.
+Check out the example app at [rossta/memberful-rails-example](github.com/rossta/memberful-rails-example) for more info.
 
 ## Contributing
 
