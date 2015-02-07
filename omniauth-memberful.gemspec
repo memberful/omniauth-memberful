@@ -13,8 +13,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/rossta/memberful'
   spec.license       = 'MIT'
 
-  spec.files         = `git ls-files -z`.split('\x0')
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.files         = `git ls-files -z`.split("\x0")
+  spec.executables   = []
   spec.test_files    = spec.files.grep(%r{^(spec|features)/})
   spec.require_paths = ['lib']
 
