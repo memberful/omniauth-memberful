@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe OmniAuth::Strategies::Memberful do
-  let(:request) { double('Request', :params => {}, :cookies => {}, :env => {}) }
+  let(:request) { double('Request', params: {}, cookies: {}, env: {}) }
 
   subject do
     args = ['appid', 'secret', @options].compact

@@ -1,2 +1,2 @@
-require "omniauth-memberful/version"
-require "omniauth/strategies/memberful"
+require 'omniauth-memberful/version'
+require 'omniauth/strategies/memberful'
